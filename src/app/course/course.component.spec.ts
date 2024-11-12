@@ -27,7 +27,7 @@ describe('BookListComponent', () => {
    fixture = TestBed.createComponent(CourseComponent);
    component = fixture.componentInstance;
    component.courses = [
-     new Course(faker.lorem.sentence(), faker.person.fullName(), faker.number.int())
+     new Course(faker.number.int(), faker.lorem.sentence(), faker.person.fullName(), faker.number.int(), faker.lorem.sentence(), faker.lorem.sentence(), faker.internet.url()),
    ]
 
    fixture.detectChanges();

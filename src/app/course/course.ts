@@ -1,11 +1,19 @@
 export class Course {
+    id: number;
     name: string;
-    professor: string;
-    credits: number;
+    channel: string;
+    seasons: number;
+    image: string;
+    description: string;
+    link: string;
 
-    public constructor(name: string, professor: string, credits: number) {
+    public constructor(id: number, name: string, channel: string, seasons: number, image: string, description: string, link: string) {
+        this.id = id;
         this.name = name;
-        this.professor = professor;
-        this.credits = credits;
+        this.channel = channel;
+        this.seasons = seasons;
+        this.image = image;
+        this.description = description;
+        this.link = link;
  }
 }
